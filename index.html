@@ -1,149 +1,19 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Iting's blogs</title>
-</head>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+  </script>
 <script>
-$(document).ready(function(){
-	$("#about").hover(function(){
-		$("#hoverContent").html("<div style=\"font-size:26px\">\
-					<li class=\"word1\"> \
-						This is my first project \
-					</li>\
-					<li>My first Project</li> \
-				</div> \
-		");},
-		function(){
-			$("#hoverContent").html("");
-		}
-	);
-
-
-	$("#record").hover(function(){
-		$("#hoverContent").html("<div style=\"font-size:26px\">\
-					<li class=\"word1\"> \
-						This is my second project \
-					</li>\
-					<li>My second Proj  ect</li> \
-				</div> \
-		");},
-		function(){
-			$("#hoverContent").html("");
-		});
-	});
-
+  $(document).ready(function() {
+    $("#target1").click(function(){
+      $("p").hide();
+    });
+  });
 </script>
 
-<style type="text/css">
-	#title{
-		color: #ffffff;
-		font-family: Consolas;
-		font-size:  100px;
-		text-align: center;
-	}
-
-	#sourse{
-		color: #FFFF00; 
-		text-decoration: none;
-	}
-
-	#myBtn{
-		
-	}
-
-	#container {
-
-		color: white;
-		font-family: Consolas;
-        position: relative;
-        text-align: right;
-        width: 1000px;
-        height: 700px;
-        padding: 0px 0px 1300px 0px;
-        margin: 1px auto;
-		background: rgba(255, 171, 133,0.7);
-
-	}
-
-	#list{
-		color: white;
-        position: absolute;
-        right: 0px;
-        text-align: center;
-        width: 400px;
-        font-size: 3em;
-        padding: 0px 0px 0px 0px;
-        margin: 0px auto;		
-	}
-
-	.introduce{
-		color: white;
-        position: absolute;
-        left: 50px;
-        width: 600px;
-        height: 1000px;
-        padding: 75px 50px 0px 0px;
-        margin: 0px auto;
-		font-size: 3em;
-		z-index: 9999;		
-	}
-
-	.photo{
-		color: white;
-        position: absolute;
-        left: 50px;
-        width: 500px;
-        padding: 135px 50px 0px 0px;
-        margin: 0px auto;
-	}
-
-	.word{
-		width: 1300px;
-		color: #f5deb3;
-		font-size: 3em;
-	}
-
-	.word1{
-		color: #f5deb3;
-		position: : absolute;
-		vertical-align: top;
-
-	}
-	
-	#hoverContent{
-		display: inline;
-		position: relative;
-	}
-
-</style>
-
-
-
-<body bgcolor="#b0c4de">
-	<h1 id = "title">歡迎來到我的部落格!!!!</h1>
-
-	<div id = "container">
-	
-		<marquee onMouseOver="this.stop()" onMouseOut="this.start()" style="margin:0px;opacity:0.75;" margin:20px scrollamount="10"  noshade width="100%">My Name is Iting </marquee>
-
-		<div class="introduce">
-			<span id="about">我的項目一</span> 
-			<br>
-            <span id="record">我的項目二</span> 
-            <br>
-            <span id="record2">我的項目三</span> 
-			<br>
-			<span id="record3">我的項目四</span> 
-		</div>			
-
-		<div class="photo word">
-			<div id="hoverContent"></div>
-		</div>
-		
-	</div>
-
-</body>
+<div class="container-fluid">
+  <h1>我的網站</h1>
+        <button class="target" id="target1">隱藏</button>
+  <p>Hello!</p>
+ 
+</div>
 </html>
+
